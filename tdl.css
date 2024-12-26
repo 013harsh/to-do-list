@@ -17,17 +17,17 @@
 }
 .box{
     min-height: 200px;
-    max-width: 470px;
+    max-width: 400px;
     margin: 100px;
-    border: solid black;
+    border: solid rgb(245, 237, 237);
     background-color: orange;
-    border-radius: 20px;
+    border-radius: 13px;
     box-shadow: 11px 19px 12px rgb(243, 62, 62);
 }
 
 .upperbox{
     display: flex;
-    margin: 20px 40px;
+    margin: 25px 57px;
 }
 
 .font{
@@ -43,10 +43,11 @@
 }
 
 .middlebox{
-    margin: 0px 70px ;
+    margin: 0px 30px ;
+    max-width: 370px;
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(150px , 1fr )); 
-    border-radius: 80px;
+    /* border-radius: 1/0px; */
 }
 
 .task_container{
@@ -54,7 +55,8 @@
         width: 270px;
         height: 27px;
         border-radius: 16px;
-        cursor: pointer;}
+        cursor: pointer;
+    }
 }
 
 .button_container{
@@ -71,7 +73,9 @@
 ul li{
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 10px ;
+    width:270px;
+
+    padding: 12px 8px 12px 19px ;
     user-select: none;
     cursor: pointer;
     position : relative;
@@ -100,16 +104,19 @@ ul li.checked::before{
 }
 ul li span{
     position: absolute;
-    right: 0;
+    right: 0px;
     top : 5px;
     width: 40px;
     height: 40px;
     font-size: 22px;
-    color: black;
+    color: rgb(17, 11, 11);
     line-height:40px;
-    text-align: center;
+    text-align: cneter;
     border-radius: 50%;
 }
 ul li span:hover{
-    background: white;
+    background: rgb(140, 194, 74);
+}
+.list_container{
+    max-width: 370px;
 }
