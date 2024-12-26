@@ -1,0 +1,115 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 100vh;
+    border: solid black ;
+    font-family: "Roboto", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: khaki;
+    text-align: center; 
+}
+.box{
+    min-height: 200px;
+    max-width: 470px;
+    margin: 100px;
+    border: solid black;
+    background-color: orange;
+    border-radius: 20px;
+    box-shadow: 11px 19px 12px rgb(243, 62, 62);
+}
+
+.upperbox{
+    display: flex;
+    margin: 20px 40px;
+}
+
+.font{
+    padding: 20px;
+    font-size: medium;
+    font-weight:900;
+}
+.img{
+    padding:20px;
+    background-image: url(todolist.png);
+    height: 20px;
+    background-size:cover;
+}
+
+.middlebox{
+    margin: 0px 70px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(150px , 1fr )); 
+    border-radius: 80px;
+}
+
+.task_container{
+    input{
+        width: 270px;
+        height: 27px;
+        border-radius: 16px;
+        cursor: pointer;}
+}
+
+.button_container{
+    button{
+        width: 50px;
+        height: 27px;
+        border: solid black;
+        border-radius: 16px;
+        background-color: rgb(243, 62, 62);
+        cursor: pointer;
+    }
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 10px ;
+    user-select: none;
+    cursor: pointer;
+    position : relative;
+}
+
+ul li::before{
+    content:' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius:50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top : 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    line-height:40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: white;
+}

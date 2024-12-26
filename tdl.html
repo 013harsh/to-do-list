@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO DO LIST </title>
+    <link rel="stylesheet" href="tdl.css">
 </head>
 <body>
-    HARSH AGGARWAL
-    jfberhfhfnhjern
+    <div class="container">
+        <div class="box">
+            <div class="upperbox"> 
+                <h2 class="font">TO-DO LIST</h2>
+                <div class="img"></div>
+            </div>
+            <!-- <form action=" "> -->
+            <div class="middlebox">
+                
+                <div class="task_container">
+                    <label for="list">  </label>
+                    <input type="text" id="input-box"  name="list" placeholder="ADD YOUR TASK"/>
+                </div>
 
-</body>
+                <div class="button_container">
+                    <button onclick="addtask()">ADD</button>
+                </div>
+
+                <ul id="list_container">
+                    <!-- <li class="checked">task 1</li>
+                    <li>task 2</li>
+                    <li>task 3</li> -->
+                </ul>
+            </div>
+        <!-- </form> -->
+        <script src="tdl.js"></script>
+    </body>
 </html>
